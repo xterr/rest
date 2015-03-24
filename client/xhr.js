@@ -123,7 +123,7 @@
 
 					client.onreadystatechange = function (/* e */) {
 						if (request.canceled) { return; }
-						if (client.readyState === (XMLHttpRequest.DONE || 4)) {
+						if (client.readyState === 4) {
 							response.status = {
 								code: client.status,
 								text: client.statusText
